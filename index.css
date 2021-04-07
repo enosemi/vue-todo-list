@@ -1,0 +1,92 @@
+#app{
+	box-sizing: border-box;
+}
+
+h1{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #212121;
+    color: #FFF;
+}
+ul{
+	margin: 0;
+	padding:0;
+}
+
+
+ul li{
+	cursor: pointer;
+	position: relative;
+	padding: 12px 8px 12px 40px;
+	background: #eee;
+	font-size: 18px;
+	transition: 0.2s;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select: none;
+}
+
+
+
+ul li:nth-child(odd){
+	background: #f9f9f9;
+
+}
+
+.sb{
+	font-size: 20px;
+	font-weight: 700;
+	padding: 15px 25px;
+	margin: 0px 15px;
+	border-radius: 8px;
+	color:#fff;
+	background-color: #cc2e5d;
+	-webkit-animation-name:Floatingx;
+	-webkit-animation-duration:1s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-moz-animation-name:Floating;
+	-moz-animation-duration:1s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-timing-function:ease-in-out;
+}
+
+@-webkit-keyframes Floatingx{
+	from{-webkit-transform:translate(0,0px);}
+	65% {-webkit-transform:translate(0,15px);}
+	to{-webkit-transform:translate(0,-0px);}
+
+}
+
+@-moz-keyframes Floating{
+	from{-moz-transform:translate(0,0px);}
+	65% {-moz-transform:translate(0,15px);}
+	to{-moz-transform:translate(0,-0px);}
+}
+
+
+
+
+.sa{
+	font-weight: 700;
+	font-size: 16px;
+	padding: 10px 20px;
+	margin: 0px 15px;
+	border-radius: 6px;
+	color: #fff;
+	background-color: #ff5858;
+}
+
+
+.bar{
+	margin: 0;
+	border-radius: 0;
+	width: 75%;
+	padding:10px;
+	float: left;
+	font-size: 16px;
+	border-color: grey;
+}
